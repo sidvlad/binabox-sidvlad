@@ -1,3 +1,4 @@
-#BinaBox
+# BinaBox — the homework project
 
-Markup — Bogov Vladimir
+Student — Bogov Vladimir
+Mentor — Datsenko Andrey
