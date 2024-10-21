@@ -1,4 +1,4 @@
-# BinaBox — the homework project
+#BinaBox — the homework project
 
-Student — Bogov Vladimir
-Mentor — Datsenko Andrey
+_Student_ — **Bogov Vladimir**
+_Mentor_ — **Datsenko Andrii**
