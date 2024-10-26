@@ -2,110 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <link rel="stylesheet" href="style.css"> --> <!-- uncomment styles --> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Binabox NFT</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container" class="container">
-        <div class="profile-folder">
-          <div class="folder">
-            <div class="title">
-              Yaba Kawaii Studio
-              <span class="title-btn">
-                <span class="btn1"></span>
-                <span class="btn2"></span>
-                <span class="btn3"></span>
-              </span>
-            </div>
 
-            <div class="body">
-              <div class="profile-icon-box">
-                <p id="typeText"></p>
-                <div class="profile-icon">
-                    <img src="https://assets.codepen.io/4292193/ayakoyokoya_icon.png" /> <!-- Photo -->
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="logo">
+                <div class="">
+                    <img src="logo.jpg" alt="Blog Post" class="logo__image">
+                    <span>BINABOX<span>
                 </div>
-              </div>
-
-              <div class="name">
-                <p>AYAKO YOKOYA</p> <!-- Name -->
-              </div>
-              <div class="aboutme">
-                <p>Creative Developer <span>(I wanna be...)</span></p> <!-- Profession -->
-              </div>
-
-              <div class="sns-btn-box">
-                <p>My sns accounts are...</p>
-                <a
-                  href="https://github.com/ayakoyokoya/"
-                  target="_blank"
-                  class="sns-btn"
-                >
-                  github <!-- Link to social media 1 -->
-                </a>
-                <a
-                  href="https://twitter.com/ayakoyokoya"
-                  target="_blank"
-                  class="sns-btn"
-                >
-                  twitter <!-- Link to social media 2 -->
-                </a>
-              </div>
-
-              <div class="portfolio-btn-box">
-                <p>
-                  Do you want to see error? <!-- Any text -->
-                </p>
-                <div class="portfolio">
-                  <button id="error-btn" class="error-btn">
-                    error?
-                  </button>
-                  <a
-                    href="https://ayakoyokoya.github.io/yaba-kawaii-audio-visualizer/dist/"
-                    target="_blank"
-                    class="portfolio-btn"
-                  >
-                    yes! 
-                  </a>
-                </div>
-              </div>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Home</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Blog</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Catalog</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <input class="header__action-search" type="text" placeholder="Search" aria-label="Search">
+                <a href="#" class="header__action-link">Connect</a>
+                <a href="#" class="header__action-link">Discord</a>
             </div>
-          </div>
         </div>
-      </div>
+    </header>
 
-      <template id="template">
-        <div class="error">
-          <div class="folder folder_error">
-            <div class="title">
-              Error
-              <span class="title-btn">
-                <span class="btn1"></span>
-                <span class="btn2"></span>
-                <span class="btn3"></span>
-              </span>
+    <main class="main">
+
+        <section class="intro">
+            <h1 class="intro__title">With BINABOX Explore NFT Collection</h1>
+            <p class="intro__description">We are the best way to check the rarity of NFT collection</p>
+            <div class="intro__stats">
+                <span class="intro__stat">2240+ Total Items</span>
+                <span class="intro__stat">1000+ Products unlocked</span>
             </div>
+            <div class="intro__actions">
+                <a href="#" class="intro__btn">Connect Wallet</a>
+                <a href="#" class="intro__btn hero__btn--outline">Whitelist Now</a>
+            </div>
+        </section>
 
-            <div class="body">
-              <div class="profile-icon-box">
-                <div class="profile-icon">
-                    <img src="https://assets.codepen.io/4292193/ayakoyokoya_icon2.png" />
+        <section class="catalog">
+            <div class="catalog__navigation">
+                <h2 class="catalog__title">Catalog</h2>
+                <ul class="catalog__pagination">
+                    <li class="catalog__pagination-item">
+                        <a href="#" class="catalog__pagination-item-link pagination__item-see-all">See all</a>
+                    </li>
+                    <li class="catalog__pagination-item">
+                        <a href="#" class="pcatalog__pagination-item-link"> < </a>
+                    </li>
+                    <li class="catalog__pagination-item">
+                        <a href="#" class="catalog__pagination-item-link"> > </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalog__items">
+                <article class="catalog__item">
+                    <img src="nft1.jpg" alt="NFT Image" class="catalog__item-image">
+                    <p class="catalog__item-price">$199</p>
+                    <p class="catalog__item-name">Name Product</p>
+                </article>
+                <article class="catalog__item">
+                    <img src="nft2.jpg" alt="NFT Image" class="catalog__item-image">
+                    <p class="catalog__item-price">$199</p>
+                    <p class="catalog__item-name">Name Product</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="blog">
+            <h2 class="blog__title">Our Blog</h2>
+            <div class="blog__posts">
+                <article class="blog__post">
+                    <img src="blog1.jpg" alt="Blog Post" class="blog__post-image">
+                    <div class="blog__post-info">
+                        <p class="blog__post-info-name"></p>
+                        <p class="blog__post-info-date"></p>
+                    </div>
+                    <h3 class="blog__post-title">Sonic Live</h3>
+                    <p class="blog__post-description">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
+                    <a href="#" class="blog__post-link">Read more</a>
+                </article>
+            </div>
+            <a href="#" class="read-more">Read more</a>
+        </section>
+
+        <section class="about">
+            <h2 class="about__title">About Us</h2>
+            <p class="about__subtitle">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat</p>
+            <div class="about__features">
+                <div class="about__feature">
+                    <h3 class="about__feature-title">High Quality</h3>
+                    <p class="about__feature-description">Lorem ipsum dolor sit amet.</p>
+                    <p class="about__feature-number">01</p>
                 </div>
-              </div>
-
-              <div class="name">
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <p>error!!!!</p>
-                <button class="ok-error-btn" onclick="window.location.reload();">OK...</button>
-              </div>
+                <div class="about__feature">
+                    <h3 class="about__feature-title">Big Collection</h3>
+                    <p class="about__feature-description">Lorem ipsum dolor sit amet.</p>
+                    <p class="about__feature-number">01</p>
+                </div>
             </div>
-          </div>
-        </div>
-      </template>
-      <!-- <script src="script.js"></script> --> <!-- uncomment script --> 
+            <a href="#" class="read-more">Read more</a>
+        </section>
+
+        <section class="team">
+            <h2 class="team__title">Our Team</h2>
+            <div class="team__members">
+                <article class="team__member">
+                    <img src="team1.jpg" alt="Team Member" class="team__member-image">
+                    <h3 class="team__member-name">Jason Smith</h3>
+                    <p class="team__member-role">Co-founder</p>
+                    <div class="team__member-social"></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h2 class="faq__title">FAQs</h2>
+            <div class="faq__items">
+                <div class="faq__item">
+                    <h3 class="faq__item-question">What are the NFTs?</h3>
+                    <p class="faq__item-answer">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    </footer>
+
 </body>
 </html>
