@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;500;900&display=swap');
+
+body {
+    font-family: Poppins;
+    background-color: #0D0D15;
+    color: #F5F8FB;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+a, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type:  none;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration: none;
+    border: 2px solid #D0D7FB2B;
+    color: #F5F8FB;
+}
+
+.btn__color {
+    background-color: #0265DC;
+}
+
+header.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu-item {
+    padding: 10px 20px;
+}
+
+.header__menu-link {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+    color: #F5F8FB;
+}
+
+.header__actions {
+    display: flex;
+}
+
+.logo__wrapper {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    text-decoration: none;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.logo__image {
+    margin-right: 15px;
+}
+
+.logo__text {
+    font-family: Bakbak One;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    text-transform: uppercase;
+}
+
+.section__title {
+    font-family: Bakbak One;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #F8F7FF;
+
+}
+
+.header__action-search {
+    border: 2px solid #D0D7FB2B;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.intro {
+    background: radial-gradient(42.5% 42.5% at 22.28% -4.22%, rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%);
+}
+
+.intro__wrapper {
+    margin: 0 auto;
+    padding: 65px 200px;
+}
+
+.intro__title {
+    font-family: Bakbak One;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.intro__title span {
+    color: #0265DC;
+}
+
+.intro__stats {
+    display: flex;
+}
+
+.intro__num {
+    font-family: Bakbak One;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+}
+
+.intro__text {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.intro__description {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.catalog__items {
+    display: flex;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-right: 10px;
+    background-color: #1D1C28;
+}
+
+.catalog__navigation,
+.catalog__pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog__item-price {
+    font-family: Bakbak One;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+}
+
+.catalog__item-name {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #EFF5FAD1;
+}
+
+.catalog__item-image {
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: #fff;
+    color: #0265DC;
+}
+
+.label__sold {
+    background-color: #EA3829;
+    color: #F5F8FB;
+}
+
+.blog__posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog__post {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-right: 10px;
+    background-color: #1D1C28;
+}
+
+.blog__post-image {
+    position: relative;
+}
+
+.blog__post-info {
+    display: flex;
+}
+
+.about__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.about__features {
+    display: flex;
+}
+
+.about__feature {
+   width: 50%;
+}
+
+
