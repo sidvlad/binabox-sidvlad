@@ -18,8 +18,21 @@ a, p, ul, li {
     padding: 0;
 }
 
-li {
-    list-style-type:  none;
+/* Blocks for all pages */
+
+.main {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.main-blog {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.btn__wrapper {
+    display: block;
+    text-align: center;
 }
 
 .btn {
@@ -35,6 +48,67 @@ li {
 .btn__color {
     background-color: #0265DC;
 }
+
+.label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: #fff;
+    color: #0265DC;
+}
+
+.label__sold {
+    background-color: #EA3829;
+    color: #F5F8FB;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.logo__image {
+    margin-right: 15px;
+}
+
+.logo__text {
+    font-family: Bakbak One;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    text-transform: uppercase;
+}
+
+.social {
+    display: flex;
+}
+
+li.social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    padding: 10px;
+}
+
+hr.divider {
+    background-color: #0D0D15;
+    width: 100%;
+    height: 1px;
+}
+
+/* Header all pages */
 
 header.header {
     display: flex;
@@ -64,33 +138,6 @@ header.header {
     display: flex;
 }
 
-.logo__wrapper {
-    display: flex;
-    align-items: center;
-}
-.logo {
-    text-decoration: none;
-    text-decoration-style: none;
-    text-decoration-line: none;
-}
-
-.logo__image {
-    margin-right: 15px;
-}
-
-.logo__text {
-    font-family: Bakbak One;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 42px;
-    text-align: left;
-    color: #ffffff;
-    text-decoration: none;
-    text-decoration-style: none;
-    text-decoration-line: none;
-    text-transform: uppercase;
-}
-
 .section__title {
     font-family: Bakbak One;
     font-size: 36px;
@@ -109,6 +156,8 @@ header.header {
     font-weight: 400;
     line-height: 20px;
 }
+
+/* Index page Intro block */
 
 .intro {
     background: radial-gradient(42.5% 42.5% at 22.28% -4.22%, rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%);
@@ -158,6 +207,8 @@ header.header {
     line-height: 28px;
 }
 
+/* Index page Catalog block */
+
 .catalog__items {
     display: flex;
 }
@@ -197,19 +248,7 @@ header.header {
     position: relative;
 }
 
-.label {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    background-color: #fff;
-    color: #0265DC;
-}
-
-.label__sold {
-    background-color: #EA3829;
-    color: #F5F8FB;
-}
+/* Index page Blog block */
 
 .blog__posts {
     display: grid;
@@ -232,6 +271,8 @@ header.header {
     display: flex;
 }
 
+/* Index page About block */
+
 .about__wrapper {
     max-width: 960px;
     margin: 0 auto;
@@ -243,6 +284,93 @@ header.header {
 
 .about__feature {
    width: 50%;
+   margin-right: 10px;
+   padding: 30px;
+   background-color: #1A1925;
 }
 
+.about__feature:nth-child(even) {
+    margin-left: 10px;
+}
+
+.about .btn {
+    justify-content: center;
+}
+
+/* Index page Our Team block */
+
+.team__members {
+    padding: 0 150px;
+}
+
+.team__member {
+    width: 316px;
+    height: 293px;
+    background-color: #1D1C28;
+}
+
+/* Footer */
+
+footer.footer {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.footer__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .logo__text {
+    color: #0265DC;
+}
+
+.logo__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__nav {
+    display: flex;
+}
+
+.footer__nav-block .header__menu {
+    flex-direction: column;
+}
+
+.footer__secondary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.footer__copyright span {
+    text-transform: uppercase;
+}
+
+.footer__social {
+    height: 40px;
+}
+
+
+
+
+
+
+/*Blog page */
+
+.blog__main {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Комментарий */
 
