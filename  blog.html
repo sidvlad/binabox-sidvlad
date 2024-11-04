@@ -16,27 +16,32 @@
         </a>
         <nav class="header__nav">
             <ul class="header__menu">
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Home</a>
+                <li class="header__menu--item">
+                    <a href="#" class="header__menu--link">Home</a>
                 </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Blog</a>
+                <li class="header__menu--item">
+                    <a href="#" class="header__menu--link">Blog</a>
                 </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Catalog</a>
+                <li class="header__menu--item">
+                    <a href="#" class="header__menu--link">Catalog</a>
                 </li>
-                <li class="header__menu-item">
-                    <a href="#" class="header__menu-link">Contact Us</a>
+                <li class="header__menu--item">
+                    <a href="#" class="header__menu--link">Contact Us</a>
                 </li>
             </ul>
         </nav>
 
-        <div class="header__actions">
-            <form action="/search" method="GET">
-                <input class="header__action-search" type="text" placeholder="Search" aria-label="Search">
+        <div class="block__btns">
+            <form class="search__form" action="/search" method="GET">
+                <input class="search__form--input" type="text" placeholder="Search" aria-label="Search">
+                <svg id="search" class="search__form--icon" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
             </form >
-            <a href="#" class="btn btn__img">Connect</a>
-            <a href="#" class="btn btn__img btn__color">Discord</a>
+            <div class="control__divider"></div>
+            <a href="#" class="btn btn__icon">Connect</a>
+            <a href="#" class="btn btn__icon btn__color">Discord</a>
         </div>
     </header>
 
@@ -182,17 +187,17 @@
                     <div class="footer__nav-title">Subscribe</div>
                     <nav class="header__nav">
                         <ul class="header__menu">
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-link">Home</a>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link">Home</a>
                             </li>
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-link">Blog</a>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link">Blog</a>
                             </li>
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-link">Catalog</a>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link">Catalog</a>
                             </li>
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-link">Contact Us</a>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link">Contact Us</a>
                             </li>
                         </ul>
                     </nav>
@@ -201,17 +206,17 @@
                     <div class="footer__nav-title">Company</div>
                     <nav class="header__nav">
                         <ul class="header__menu">
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-link">Terms Canditions</a>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link">Terms Canditions</a>
                             </li>
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-link">Privacy Policy</a>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link">Privacy Policy</a>
                             </li>
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-link">Whitepaper</a>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link">Whitepaper</a>
                             </li>
-                            <li class="header__menu-item">
-                                <a href="#" class="header__menu-link">Help Center</a>
+                            <li class="header__menu--item">
+                                <a href="#" class="header__menu--link">Help Center</a>
                             </li>
                         </ul>
                     </nav>
@@ -223,34 +228,34 @@
             <div class="footer__copyright"><span>Binabox</span> 2022 - ALL rights reserved</div>
             <div class="footer__social">
                 <ul class="social">
-                    <li class="social-item">
+                    <li class="social__item">
                         <a href="#">
-                            <img src="images/social/twitter.svg">
+                            <img src="images/icons/social/twitter.svg" alt="Twitter">
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social__item">
                         <a href="#">
-                            <img src="images/social/facebook.svg">
+                            <img src="images/icons/social/facebook.svg" alt="Facebook">
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social__item">
                         <a href="#">
-                            <img src="images/social/telegram.svg">
+                            <img src="images/icons/social/telegram.svg" alt="Telegram">
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social__item">
                         <a href="#">
-                            <img src="images/social/youtube.svg">
+                            <img src="images/icons/social/youtube.svg" alt="Youtube">
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social__item">
                         <a href="#">
-                            <img src="images/social/music.svg">
+                            <img src="images/icons/social/tiktok.svg" alt="TikTok">
                         </a>
                     </li>
-                    <li class="social-item">
+                    <li class="social__item">
                         <a href="#">
-                            <img src="images/social/other.svg">
+                            <img src="images/icons/social/discord.svg" alt="Discord">
                         </a>
                     </li>
                 </ul>
