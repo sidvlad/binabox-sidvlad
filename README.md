@@ -1,4 +1,4 @@
 #BinaBox — the homework project
 
-_Student_ — **Bogov Vladimir**
-_Mentor_ — **Datsenko Andrii**
+Student — Bogov Vladimir 
+Mentor — Datsenko Andrii
