@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binabox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One:wght@400;500;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
     <header class="header">
@@ -31,7 +35,7 @@
         <div class="header-actions">
             <form class="search-form" action="/search">
                 <button type="submit" class="search-form__btn">
-                    <img src="images/search.svg" class="search-form__icon" width="24" height="24" alt="search">
+                    <img src="images/search.svg" width="24" height="24" alt="search">
                 </button>
                 <input class="search-form__input" type="text" placeholder="Search" aria-label="Search"> 
             </form >
@@ -47,23 +51,25 @@
     </header>
     <section class="intro">
         <div class="intro__wrapper">
-            <strong class="intro__title">With <span>BINABOX</span> Explore NFT Collection</strong>
-            <p class="intro__description">We are the best way to check the rarity of NFT collection</p>
-            <div class="intro__stats">
-                <div class="intro__stat">
-                    <p class="intro__num">2240+</p>
-                    <p class="intro__text">Total Items</p>
+            <div class="intro__block">
+                <strong class="intro__title">With <span>BINABOX</span> Explore NFT Collection</strong>
+                <p class="intro__description">We are the best way to check the rarity of NFT collection</p>
+                <div class="intro__stats">
+                    <div class="intro__stat">
+                        <p class="intro__num">2240+</p>
+                        <p class="intro__text">Total Items</p>
+                    </div>
+                    <div class="intro__stat">
+                        <p class="intro__num">1000+</p>
+                        <p class="intro__text">Products unlocked</p>
+                    </div>
                 </div>
-                <div class="intro__stat">
-                    <p class="intro__num">1000+</p>
-                    <p class="intro__text">Products unlocked</p>
+                <div class="block__btns">
+                    <a href="#" class="btn btn--color">Connect Wallet</a>
+                    <a href="#" class="btn">Whitelist Now</a>
                 </div>
             </div>
-            <div class="block__btns">
-                <a href="#" class="btn btn--color">Connect Wallet</a>
-                <a href="#" class="btn">Whitelist Now</a>
-            </div>
-            <div class="intro__bg--main"><img src="images/bg.png" width="576" height="576" alt="background intro image"></div>
+            <div class="intro__bg"><img src="images/bg.png" width="576" height="576" alt="background intro image"></div>
         </div>
     </section>
     <main class="main">
@@ -74,11 +80,9 @@
                     <a href="#" class="btn btn--margin-right">See all</a>
                     <a href="#" class="btn">
                         <img src="images/chevron-left.svg" width="24" height="24" alt="previous button">
-                        <span class="hidden">previous button</span>
                     </a>
                     <a href="#" class="btn btn--color">
                         <img src="images/chevron-right.svg" width="24" height="24" alt="next button">
-                        <span class="hidden">next button</span>
                     </a>
                 </div>
             </div>
@@ -441,7 +445,7 @@
         </section>
         <section class="faq">
             <h2 class="subtitle">FAQs</h2>
-            <div class="faq__items">
+            <div class="faq__wrapper">
                 <details class="faq__item">
                     <summary class="faq__question">What are the NFTs?</summary>
                     <p class="faq__answer">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus</p>
