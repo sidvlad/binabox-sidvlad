@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Blog - Binabox</title>
+    <title>Binabox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One:wght@400;500;600&display=swap" rel="stylesheet"/>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">
+        <h1 class="logo">
             <img src="images/logo-white.svg" width="188" height="42" class="logo__image" alt="Binabox">
-        </a>
+        </h1>
         <nav class="header-nav">
             <ul class="header-nav__wrapper">
                 <li class="header-nav__item">
@@ -40,18 +44,20 @@
                 Discord
             </a>
             <a href="#" class="btn btn--icon btn--color">
-                <img src="images/connect.svg" width="24" height="24" alt="connect">
+                <img src="images/wallet.svg" width="24" height="24" alt="connect">
                 Connect
             </a>
         </div>
     </header>
     <section class="blog-intro">
-        <h1 class="blog-intro__title">Our blog</h1>
-        <ul class="breadcrumbs">
-            <li href="#" class="breadcrumbs__item"><a href="">Home</a></li>
-            <li href="#" class="breadcrumbs__item"><a href="">Our blog</a></li>
-            <li href="#" class="breadcrumbs__item">The Basilisks NFT</li>
-        </ul>
+        <div class="blog-intro__wrapper">
+            <h1 class="intro__title">Our blog</h1>
+            <ul class="breadcrumbs">
+                <li href="#" class="breadcrumbs__item"><a href="">Home</a></li>
+                <li href="#" class="breadcrumbs__item"><a href="">Our blog</a></li>
+                <li href="#" class="breadcrumbs__item breadcrumbs__item--active">The Basilisks NFT</li>
+            </ul>
+        </div>
     </section>
      <main class="main main--two-col">
         <aside class="sidebar">
@@ -81,11 +87,11 @@
         </aside>
         <article class="blog-content">
             <figure class="blog-content__photo">
-                <img src="images/blog-photo.jpg" width="920" height="557" alt="dragon with man">
+                <img src="images/dragon-and-man.jpg" width="920" height="557" alt="dragon with man">
                 <figcaption class="blog-content__caption">Photo caption</figcaption>
             </figure>
             <h2 class="subtitle">The Basilisks NFT</h2>
-            <a href="#" class="btn btn__img btn__color">Gaming</a>
+            <a href="#" class="btn btn--color">Gaming</a>
             <div class="blog__info">
                 <p class="blog__name">Tony Nguyen</p>
                 <time datetime="2022-06-20" class="blog__date">20 Jun 2022</time>
@@ -106,10 +112,10 @@
                 </li>
             </ul>
             <ol class="blog__list blog__list--mark">
-                <li>List name</li>
-                <li>List name</li>
-                <li>List name</li>
-                <li>List name</li>
+                <li>List name <span>&nbsp</span></li>
+                <li>List name <span>&nbsp</span></li>
+                <li>List name <span>&nbsp</span></li>
+                <li>List name <span>&nbsp</span></li>
             </ol>
             <div class="blog__blockquote">
                 <blockquote cite="https://">
@@ -119,11 +125,11 @@
             </div>
             <div class="blog__photo-wrapper">
                 <figure class="blog__photo">
-                    <img src="images/blog-photo.jpg" alt="Basilisk NFT">
+                    <img src="images/dragon-baby.jpg" width="448" height="390" alt="dragon baby">
                     <figcaption class="blog__photo-caption">Photo caption</figcaption>
                 </figure>
                 <figure class="blog__photo">
-                    <img src="images/blog-photo.jpg" alt="Basilisk NFT">
+                    <img src="images/dragon-baby-and-man.jpg" width="448" height="390" alt="dragon baby and man">
                     <figcaption class="blog__photo-caption">Photo caption</figcaption>
                 </figure>
             </div>
@@ -174,9 +180,9 @@
     <footer class="footer">
         <div class="footer__main">
             <div class="logo__wrapper">
-                <a href="#" class="logo">
+                <strong class="logo">
                     <img src="images/logo-blue.svg" width="188" height="42" class="logo__image" alt="Binabox">
-                </a>
+                </strong>
                 <div class="footer__description">We are the best way to check the rarity of NFT collection.</div>
             </div>
             <div class="footer-nav">
@@ -226,32 +232,32 @@
                 <ul class="social">
                     <li class="social__item">
                         <a href="#">
-                            <img src="images/icons/social/twitter.svg" width="24" height="24" alt="Twitter">
+                            <img src="images/twitter.svg" width="24" height="24" alt="Twitter">
                         </a>
                     </li>
                     <li class="social__item">
                         <a href="#">
-                            <img src="images/icons/social/facebook.svg" width="24" height="24" alt="Facebook">
+                            <img src="images/facebook.svg" width="24" height="24" alt="Facebook">
                         </a>
                     </li>
                     <li class="social__item">
                         <a href="#">
-                            <img src="images/icons/social/telegram.svg" width="24" height="24" alt="Telegram">
+                            <img src="images/telegram.svg" width="24" height="24" alt="Telegram">
                         </a>
                     </li>
                     <li class="social__item">
                         <a href="#">
-                            <img src="images/icons/social/youtube.svg" width="24" height="24" alt="Youtube">
+                            <img src="images/youtube.svg" width="24" height="24" alt="Youtube">
                         </a>
                     </li>
                     <li class="social__item">
                         <a href="#">
-                            <img src="images/icons/social/tiktok.svg" width="24" height="24" alt="TikTok">
+                            <img src="images/tiktok.svg" width="24" height="24" alt="TikTok">
                         </a>
                     </li>
                     <li class="social__item">
                         <a href="#">
-                            <img src="images/icons/social/discord.svg" width="24" height="24" alt="Discord">
+                            <img src="images/discord.svg" width="24" height="24" alt="Discord">
                         </a>
                     </li>
                 </ul>
