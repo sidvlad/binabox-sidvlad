@@ -6,10 +6,10 @@
     <title>Binabox</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -51,15 +51,100 @@
     </header>
     <section class="blog-intro">
         <div class="blog-intro__wrapper">
-            <h1 class="intro__title">Our blog</h1>
+            <h1 class="intro__title">Contact Us</h1>
             <ul class="breadcrumbs">
                 <li href="#" class="breadcrumbs__item"><a href="">Home</a></li>
-                <li href="#" class="breadcrumbs__item"><a href="">Our blog</a></li>
-                <li href="#" class="breadcrumbs__item breadcrumbs__item--active">The Basilisks NFT</li>
+                <li href="#" class="breadcrumbs__item breadcrumbs__item--active">Contact Us</li>
             </ul>
         </div>
     </section>
-    
+     <main class="main">
+
+        <section class="contact-info">
+            <a href="https://g.co/kgs/b1XCBrw" class="contact-info__item">
+                <img src="images/wallet.svg" width="24" height="24" alt="connect">
+                <h2 class="contact-info__title">Location</h2>
+                <p class="contact-info__text">2163 Phillips Gap Rd</p>
+            </a>
+            <a href="mailto:info.avitex@gmail.com" class="contact-info__item">
+                <img src="images/wallet.svg" width="24" height="24" alt="connect">
+                <h2 class="contact-info__title">Email</h2>
+                <p class="contact-info__text">info.avitex@gmail.com</p>
+            </a>
+            <a href="tel:+16668888" class="contact-info__item">
+                <img src="images/wallet.svg" width="24" height="24" alt="connect">
+                <h2 class="contact-info__title">Phone</h2>
+                <p class="contact-info__text">+1 666 8888</p>
+            </a>
+        </section>
+
+        <div class="get-in-touch">
+            <div class="get-in-touch__header">
+              <h2>Get in touch</h2>
+              <p>Browse through the most freuently asked questions</p>
+            </div>
+            <form action="#" method="post" class="contact-form">
+              <div class="form-switcher">
+                <span class="form-switcher__text">Use my profile information</span>
+               
+                <input type="checkbox" class="input-hidden form-switcher__input" id="switch">
+                <label for="switch" class="form-switcher__box"></label>
+                
+              </div>
+              <div class="form-control">
+                <label class="form-control__label" for="name">Name</label>
+                <input type="text" id="name" class="form-control__input" minlength="3" required>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label" for="lastname">Last name</label>
+                <input type="text" id="lastname" class="form-control__input" required>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label" for="date-of-birth">Date of birth</label>
+                <input type="date" id="date-of-birth" class="form-control__input" required>
+              </div>
+              <div class="form-control">
+                <div class="form-control__label" for="date-of-birth">Gender</div>
+                <label class="form-radio">
+                  <input class="input-hidden form-radio__input" type="radio" name="gender" checked required>
+                  <span class="form-radio__inner">
+                    <span class="form-radio__box"></span>
+                    <span class="form-radio__text">Male</span>
+                  </span>
+                </label>
+                <label class="form-radio">
+                  <input class="input-hidden form-radio__input" type="radio" name="gender" value="female">
+                  <span class="form-radio__inner">
+                    <span class="form-radio__box"></span>
+                    <span class="form-radio__text">Female</span>
+                  </span>
+                </label>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label" for="email">Email</label>
+                <input type="email" id="email" class="form-control__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label" for="phone">Phone number</label>
+                <input type="tel" disabled id="phone" class="form-control__input" required>
+              </div>
+              <div class="form-control">
+                <label class="form-control__label" for="message">Message</label>
+                <textarea id="message" class="form-control__input"></textarea>
+              </div>
+              <label class="form-checkbox">
+                <input type="checkbox" class="input-hidden form-checkbox__input" required>
+                <p class="form-checkbox__inner">
+                  <span class="form-checkbox__box"></span>
+                  <span class="form-checkbox__text">By clicking on the ‘Send Message’ button I agree to <a target="_blank">all the terms of the security policy</a></span>
+                </p>
+              </label>
+              <button type="submit" class="form-control__submit">Send Message</button>
+            </form>
+          </div>
+          
+        
+    </main>
     <footer class="footer">
         <div class="footer__main">
             <div class="logo__wrapper">
