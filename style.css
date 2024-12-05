@@ -161,10 +161,6 @@ mark {
     line-height: 24px;
 }
 
-.header-nav__item a:hover {
-
-}
-
 .header-actions {
     display: flex;
     margin-left: 20px;
@@ -292,8 +288,11 @@ mark {
 }
 
 .catalog__wrapper {
-    display: flex;
-    gap: 24px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 19%);
+    grid-auto-flow: column;
+    overflow-x: hidden;
 }
 
 .catalog__actions {
@@ -777,15 +776,13 @@ details[open] summary:after {
     background-image: url(images//bg-4.webp), url(images//bg-3.webp);      
     background-size: contain, cover;      
     background-repeat: no-repeat, no-repeat;
-    background-position: 0 242px, center;
+    background-position: 0 bottom, center;
     overflow-x: hidden;
 }
 
 .blog-intro__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 60px;
+    padding-bottom: 134px;
 }
 
 .blog-intro__title {
@@ -801,6 +798,7 @@ details[open] summary:after {
 
 .breadcrumbs {
     display: flex;
+    justify-content: center;
     max-width: 1280px;
     margin: 0 auto;
 }
