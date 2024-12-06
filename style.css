@@ -64,7 +64,7 @@ mark {
 
 .main {
     max-width: 1630px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     padding: 0 15px;
 }
 
@@ -93,7 +93,7 @@ mark {
     padding: 0 10px 0 48px;
 }
 
-.btn--icon img {
+.btn--icon svg {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -219,12 +219,14 @@ mark {
 }
 
 .intro__wrapper::after {
-    content: url('images/bg-2.webp');
     position: absolute;
-    bottom: 0px;
-    right: 200px;
-    width: 200px;
-    height: 240px;
+    content: '';
+    background-image: url('images/bg-stripes.webp');
+    width: 338px;
+    height: 378px;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-22.3deg);
 }
 
 .intro__block {
@@ -573,13 +575,13 @@ mark {
 .about__item a {
     display: block;
     padding: 30px;
+    transition: all 1s ease;
 }
 
 .about__item a:hover {
     background-image: url(images/hover-up-left.webp), url(images/hover-down-right.webp);            
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: top left, bottom right;
-    transition: all 0.5s ease;
     opacity: 1;
 }
 
@@ -681,14 +683,15 @@ details>summary {
 
 summary::after {
     position: absolute;
-    content: url('images/plus.svg');
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url('images/plus.svg');
     right: 24px;
 }
 
 details[open] summary:after {
-    position: absolute;
-    content: url('images/minus.svg');
-    right: 24px;
+    background-image: url('images/minus.svg');
 }
 
 /* Footer */
@@ -761,8 +764,7 @@ details[open] summary:after {
 
 .catalog,
 .blog,
-.about,
-.faq {
+.about {
     margin-bottom: 80px;
 }
 
@@ -773,7 +775,7 @@ details[open] summary:after {
     min-height: 375px;
     margin: 0 auto;
     background-color: #14131C;
-    background-image: url(images//bg-4.webp), url(images//bg-3.webp);      
+    background-image: url(images//bg-wave.webp), url(images//bg-web.webp);      
     background-size: contain, cover;      
     background-repeat: no-repeat, no-repeat;
     background-position: 0 bottom, center;
@@ -876,7 +878,10 @@ details[open] summary:after {
 
 .blog__list--mark li:before {
     position: absolute;
-    content: url('images/list-icon.svg');
+    content: '';
+    background-image: url('images/list-icon.svg');
+    width: 24px;
+    height: 24px;
     left: 0;
 }
 
@@ -905,7 +910,10 @@ details[open] summary:after {
 
 .blockquote__rating:before {
     position: absolute;
-    content: url('images/stars.svg');
+    content: '';
+    background-image: url('images/stars.svg');
+    width: 16px;
+    height: 16px;
     top: 2px;
     left: 0;
 }
@@ -961,7 +969,6 @@ cite {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 150px;
     column-gap: 30px;
     font-size: 16px;
     line-height: 24px;
@@ -984,9 +991,6 @@ cite {
 
 /*Contact page */
 
-.contact {
-    margin-bottom: 115px;
-}
 
 .contact-info {
     display: flex;
