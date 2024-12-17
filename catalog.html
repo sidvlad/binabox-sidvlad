@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <a href="#" class="logo">
-            <img src="images/logo-white.svg" width="188" height="42" class="logo__image" alt="Binabox">
+            <img src="images/logo-white.svg" width="188" height="42" alt="Binabox">
         </a>
         <nav class="header-nav">
             <ul class="header-nav__wrapper">
@@ -22,13 +22,13 @@
                     <a href="#">Home</a>
                 </li>
                 <li class="header-nav__item">
-                    <a href="#">Blog</a>
+                    <a href="blog.html">Blog</a>
                 </li>
                 <li class="header-nav__item header-nav__item--active">
-                    <a href="#">Catalog</a>
+                    <a href="catalog.html">Catalog</a>
                 </li>
                 <li class="header-nav__item">
-                    <a href="#">Contact Us</a>
+                    <a href="contact.html">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -145,16 +145,72 @@
                 <details class="faq__item">
                     <summary class="faq__question">Face</summary>
                         <div class="faq__answer">
+                            <label class="form-radio form-radio--col">
+                                <input class="input-hidden form-radio__input" type="radio" name="yellow" required>
+                                <span class="form-radio__inner">
+                                    <span class="form-radio__box"></span>
+                                    <span class="form-radio__text">Yellow</span>
+                                </span>
+                            </label>
+                            <label class="form-radio form-radio--col">
+                                <input class="input-hidden form-radio__input" type="radio" name="green" required>
+                                <span class="form-radio__inner">
+                                    <span class="form-radio__box"></span>
+                                    <span class="form-radio__text">Green</span>
+                                </span>
+                            </label>
+                            <label class="form-radio form-radio--col">
+                                <input class="input-hidden form-radio__input" type="radio" name="mix" required>
+                                <span class="form-radio__inner">
+                                    <span class="form-radio__box"></span>
+                                    <span class="form-radio__text">Mix</span>
+                                </span>
+                            </label>
                         </div>
                 </details>
                 <details class="faq__item">
                     <summary class="faq__question">Skin</summary>
                         <div class="faq__answer">
+                            <label class="form-radio form-radio--col">
+                                <input class="input-hidden form-radio__input" type="radio" name="yellow" required>
+                                <span class="form-radio__inner">
+                                    <span class="form-radio__box"></span>
+                                    <span class="form-radio__text">Yellow</span>
+                                </span>
+                            </label>
+                            <label class="form-radio form-radio--col">
+                                <input class="input-hidden form-radio__input" type="radio" name="green" required>
+                                <span class="form-radio__inner">
+                                    <span class="form-radio__box"></span>
+                                    <span class="form-radio__text">Green</span>
+                                </span>
+                            </label>
+                            <label class="form-radio form-radio--col">
+                                <input class="input-hidden form-radio__input" type="radio" name="mix" required>
+                                <span class="form-radio__inner">
+                                    <span class="form-radio__box"></span>
+                                    <span class="form-radio__text">Mix</span>
+                                </span>
+                            </label>
                         </div>
                 </details>
                 <details class="faq__item">
                     <summary class="faq__question">Background</summary>
                         <div class="faq__answer">
+                            <label class="form-checkbox">
+                                <input type="checkbox" class="input-hidden form-checkbox__input" id="combatant" name="combatant" required>
+                                <p class="form-checkbox__inner">
+                                    <span class="form-checkbox__box"></span>
+                                    <span class="form-checkbox__text">Combatant</span>
+                                </p>
+                            </label>
+                            <label class="form-checkbox">
+                                <input type="checkbox" class="input-hidden form-checkbox__input" id="ninja" name="ninja" required>
+                                <p class="form-checkbox__inner">
+                                    <span class="form-checkbox__box"></span>
+                                    <span class="form-checkbox__text">Ninja</span>
+                                </p>
+                            </label>
                         </div>
                 </details>
                 <details class="faq__item">
@@ -218,7 +274,7 @@
                                     <path d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="#F5F8FB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </button>
-                            <input class="search-form__input" type="search" placeholder="Search NFT" aria-label="Search"> 
+                            <input class="search-form__input" type="text" placeholder="Search NFT" aria-label="Search"> 
                         </form >
                     </div>
                 </div>
@@ -391,7 +447,7 @@
         <div class="footer__main">
             <div class="logo__wrapper">
                 <a href="#" class="logo">
-                    <img src="images/logo-blue.svg" width="188" height="42" class="logo__image" alt="Binabox">
+                    <img src="images/logo-blue.svg" width="188" height="42" alt="Binabox">
                 </a>
                 <div class="footer__description">We are the best way to check the rarity of NFT collection.</div>
             </div>

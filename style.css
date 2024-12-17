@@ -43,6 +43,12 @@ img {
     vertical-align: top;
 }
 
+label {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+}
+
 button {
     background: none;
     border: 0;
@@ -57,7 +63,7 @@ figure {
 }
 
 mark {
-    background-color: #0265DC;
+    background-color: var(--color-blue);
     color: #F8F7FF;
 }
 
@@ -158,17 +164,22 @@ mark {
     line-height: 24px;
 }
 
+.header-nav__item--active {
+    border-bottom: 2px solid var(--color-blue);
+}
+
 .header-actions {
+    position: relative;
     display: flex;
     margin-left: 20px;
+    gap: 16px
 }
 
 .search-form {
-    position: relative;
-    padding-right: 32px;
+    order: -1;
 }
 
-.search-form:after {
+.header-actions:before {
     content: '';
     position: absolute;
     top: 10px;
@@ -211,8 +222,9 @@ mark {
     display: flex;
     justify-content: space-between;
     max-width: 1630px;
+    gap: 50px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 80px 15px 0;
 }
 
 .intro__wrapper::after {
@@ -249,10 +261,11 @@ mark {
 .intro__stats {
     display: flex;
     margin-bottom: 30px;
+    gap: 30px;
 }
 
-.intro__stat:first-child {
-    margin-right: 40px;
+.intro__stat {
+    flex-basis: 150px;
 }
 
 .intro__num {
@@ -266,10 +279,6 @@ mark {
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
-}
-
-.btn + .btn {
-    margin-left: 15px;
 }
 
 /* Index page Catalog block */
@@ -661,6 +670,7 @@ mark {
 
 .block__btns {
     display: flex;
+    column-gap: 15px;
 }
 
 .btn__wrapper {
@@ -673,13 +683,6 @@ mark {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    text-decoration-line: none;
-}
-
-.logo__image {
     margin-right: 15px;
 }
 
@@ -733,6 +736,8 @@ mark {
 }
 
 .faq__question {
+    display: flex;
+    align-items: center;
     font-family: var(--font-secondary);
     font-size: 24px;
     line-height: 32px;
@@ -751,6 +756,10 @@ details > summary::marker,
 details > summary::-webkit-details-marker {
     list-style: none;
 }
+
+details summary::-webkit-details-marker {
+    display:none;
+  }
 
 summary::after {
     position: absolute;
@@ -1102,9 +1111,15 @@ cite {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 328px;
+    width: 328px;
     padding: 40px;
     border: 1px solid #D4D9F242;
+}
+
+.contact-info__item:hover {
+    background-image: url(images/hover-up-left.webp), url(images/hover-down-right.webp);            
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
 }
 
 .contact-info__item img {
@@ -1199,6 +1214,11 @@ textarea.form-control__input {
 .form-checkbox {
     display: flex;
     cursor: pointer;
+    margin: 0 5px 0 0;
+}
+
+.form-checkbox .form-checkbox__box {
+    margin: 0 5px 0 0;
 }
 
 .form-checkbox:hover .form-checkbox__box {
@@ -1240,6 +1260,8 @@ textarea.form-control__input {
     justify-content: start;
 }
 
+
+
 .form-checkbox__inner a {
     color: #78BBFA;
 }
@@ -1249,7 +1271,6 @@ textarea.form-control__input {
 }
 
 .form-checkbox__input:checked + .form-checkbox__inner .form-checkbox__box {
-    margin: 0 5px 0 0;
     background-color: var(--color-blue);
     border-color: var(--color-blue);
 }
@@ -1264,13 +1285,13 @@ textarea.form-control__input {
 }
 
 .form-checkbox__input:user-invalid + .form-checkbox__inner .form-checkbox__box {
-    margin: 0 5px 0 0;
     border: 2px solid #EA3829;
 }
 
 .form-checkbox__box {
     margin-top: 2px;
-    display: inline-block;
+    display: flex;
+    flex-shrink: 0;
     width: 14px;
     height: 14px;
     border-radius: 4px;
@@ -1299,12 +1320,6 @@ textarea.form-control__input {
     transition: opacity .2s ease;
 }
 
-.form-checkbox__text {
-    color: #F5F8FB;
-    font-size: 14px;
-    line-height: 1.4em;
-}
-
 /* form switcher */
 
 .form-switcher {
@@ -1312,13 +1327,6 @@ textarea.form-control__input {
     display: flex;
     justify-content: space-between;
     background-color: #1D1C28;
-}
-
-.form-switcher__text {
-    font-size: 14px;
-    line-height: 1.4em;
-    color: #F5F8FB;
-    cursor: pointer;
 }
 
 .form-switcher__box {
